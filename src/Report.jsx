@@ -84,7 +84,7 @@ const Report = () => {
       </div>
     </div>
 
-    <div className="card">
+    <div className="card page-break">
       <h3>Score Overview</h3>
       <Bar
         data={{
@@ -93,6 +93,8 @@ const Report = () => {
             {
               label: "Score",
               data: Object.values(data.skills),
+               backgroundColor: ["#2863e2ff",  "#2bb55dff","#da9f38ff", "#d93d3dff"  
+        ],
             },
           ],
         }}
