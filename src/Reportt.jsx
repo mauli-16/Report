@@ -1,5 +1,5 @@
-import React from 'react'
 import './Report.css'
+import React from 'react'
 import { useState, useEffect } from 'react';
 import {
   Chart as ChartJS,
@@ -21,7 +21,7 @@ ChartJS.register(
 );
 
 import { Bar, Doughnut,Line } from 'react-chartjs-2';
-const Report = () => { 
+const Reportt = () => { 
     const [data,setData]=useState(null);
     useEffect(()=>{
       const performanceData=async()=>{
@@ -105,4 +105,4 @@ const Report = () => {
 
 }
 
-export default Report
+export default Reportt
