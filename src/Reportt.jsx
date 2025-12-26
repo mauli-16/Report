@@ -25,7 +25,7 @@ const Reportt = () => {
     const [data,setData]=useState(null);
     useEffect(()=>{
       const performanceData=async()=>{
-      const res = await fetch("http://localhost:3000/report");
+      const res = await fetch("https://report-1-brgy.onrender.com/report");
       const record=await res.json()
       setData(record)
 
