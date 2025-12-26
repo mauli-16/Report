@@ -6,7 +6,7 @@ app.use(cors());
 const data = {
   studentName: "Rahul Sharma",
   testType: "Speaking Assessment",
-  overallScore: 10,
+  overallScore: 7,
   skills: {
     pronunciation: 6.5,
     fluency: 7,
