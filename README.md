@@ -1,16 +1,15 @@
-# React + Vite
+**Running the Project**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run the project locally, simply clone the repository and install the dependencies.
+Start the frontend using npm run dev, and run the backend server with node server.js.
+You can also view the deploye project - https://report-delta-three.vercel.app/
 
-Currently, two official plugins are available:
+**Data Source**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The student scores are stored as a simple JSON object inside the backend (server.js).
+This data is served through a single API endpoint and is fetched by the frontend to display the assessment report.
 
-## React Compiler
+**Feedback Logic**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The feedback shown on the report is generated using simple conditional logic.
+Scores are grouped into ranges, and based on the student’s overall score, the appropriate feedback message is displayed automatically.
