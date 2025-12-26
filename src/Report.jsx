@@ -49,6 +49,7 @@ const Report = () => {
     <h2 className="heading">
       Student Report: {data.studentName}
     </h2>
+    <button className='dnd' onClick={()=>window.print()}>Download report</button>
 
     <div className="card">
       <h3>Overall Score</h3>
